@@ -1,0 +1,23 @@
+{
+  "productDetails": {
+    "id": "1",
+    "name": "Microsoft.",
+    "type": "PUBLIC",
+    "symbol": "MSFT",
+    "currentValue": 145.32,
+    "percentageChange": 1.24,
+    "description": "Microsoft Corporation is an American multinational technology conglomerate headquartered in Redmond, Washington.[2] Founded in 1975.",
+    "timestamp": "2024-06-19T10:00:00Z",
+    "image": "https://picsum.photos/100/100?pocoso",
+    "historicalData": [
+      {
+        "date": "2025-18-01",
+        "value": 101.1
+      },
+      {
+        "date": "2025-06-01",
+        "value": 143.85
+      }
+    ]
+  }
+}
