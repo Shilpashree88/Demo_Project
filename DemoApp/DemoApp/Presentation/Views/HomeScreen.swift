@@ -12,7 +12,7 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView {
             List(self.viewModel.companies) { company in
-                NavigationLink(destination: CompanyDetailsScreen(viewModel: CompanyDetailsViewModel(productsUseCase: ProductInfo(ProductsDetails: ProductsDetailsTransaction(service: NetworkService(transcaction: APITransaction())))))) {
+                NavigationLink(destination: CompanyDetailsScreen(viewModel: CompanyDetailsViewModel(productsUseCase: ProductInfo(ProductsDetails: ProductsRepositoryImpl(service: NetworkService(transcaction: APITransaction())))))) {
                     VStack(alignment: .leading) {
                         Text(company.name)
                             .font(.headline)
@@ -28,6 +28,6 @@ struct HomeScreen: View {
     
 }
 #Preview {
-    HomeScreen(viewModel: HomeScreenModel(productsUseCase: ProductInfo(ProductsDetails: ProductsDetailsTransaction(service: NetworkService(transcaction: APITransaction())))))
+    HomeScreen(viewModel: HomeScreenModel(productsUseCase: ProductInfo(ProductsDetails: ProductsRepositoryImpl(service: NetworkService(transcaction: APITransaction())))))
 }
 

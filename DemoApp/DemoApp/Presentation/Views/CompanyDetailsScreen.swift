@@ -88,5 +88,5 @@ struct CompanyDetailsScreen: View {
 }
 
 #Preview {
-    CompanyDetailsScreen(viewModel: CompanyDetailsViewModel(productsUseCase: ProductInfo(ProductsDetails: ProductsDetailsTransaction(service: NetworkService(transcaction: APITransaction())))))
+    CompanyDetailsScreen(viewModel: CompanyDetailsViewModel(productsUseCase: ProductInfo(ProductsDetails: ProductsRepositoryImpl(service: NetworkService(transcaction: APITransaction())))))
 }

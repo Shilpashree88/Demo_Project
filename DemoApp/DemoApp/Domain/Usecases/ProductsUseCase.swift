@@ -16,9 +16,9 @@ protocol ProductsUseCase {
 }
 
 class ProductInfo: ProductsUseCase {
-    private let ProductsDetails: ProductsDetailsTransaction
+    private let ProductsDetails: ProductsRepositoryImpl
     
-    init(ProductsDetails: ProductsDetailsTransaction) {
+    init(ProductsDetails: ProductsRepositoryImpl) {
         self.ProductsDetails = ProductsDetails
     }
     
